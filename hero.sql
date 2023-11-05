@@ -160,3 +160,10 @@ VALUES
 -- Adding another column
 ALTER TABLE Item
 ADD item_price DECIMAL (10,2);
+
+--4	Create new branch named "feat/update-delete-inactive"
+
+-- Update the state of Hero 1 to inactive
+UPDATE Hero
+SET is_active = 'false'
+WHERE hero_id = 1;
